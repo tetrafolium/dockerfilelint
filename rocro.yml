@@ -1,64 +1,68 @@
+---
 inspecode:
 
-  clang-format:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
+  tools:
 
-  cpd:
-    #options: [ --skip-lexical-errors ]
-    thresholds: { num-issues: 999 }
+    clang-format:
+      auto-fix: true
+      thresholds: {num-issues: 21}
 
-  eslint:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
+    cpd:
+      #options: [ --skip-lexical-errors ]
+      thresholds: {num-issues: 0}
 
-  flow:
-    thresholds: { num-issues: 999 }
+    eslint:
+      auto-fix: true
+      thresholds: {num-issues: 12}
 
-  #fortify:
-  #  thresholds: { num-issues: 999 }
+    flow:
+      thresholds: {num-issues: 0}   # found no input files
 
-  fossology:
-    thresholds: { num-issues: 999 }
+    # fortify:
+    #   thresholds: {num-issues: 999}
 
-  grep:
-    thresholds: { num-issues: 999 }
+    fossology:
+      thresholds: {num-issues: 1}
 
-  jscpd:
-    thresholds: { num-issues: 999 }
+    grep:
+      thresholds: {num-issues: 0}
 
-  jshint:
-    thresholds: { num-issues: 999 }
+    jscpd:
+      thresholds: {num-issues: 7}
 
-  misspell:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
+    jshint:
+      thresholds: {num-issues: 293}
 
-  npm-audit:
-    thresholds: { num-issues: 999 }
+    misspell:
+      auto-fix: true
+      thresholds: {num-issues: 1}
 
-  npm-test:
-    thresholds: { num-issues: 999 }
+    npm-audit:
+      auto-fix: true
+      thresholds: {num-issues: 11}
 
-  phpcs:
-    options:
-      --exclude:
-      - PEAR.Functions.FunctionCallSignature
-      - PEAR.Functions.FunctionDeclaration
-      - PEAR.WhiteSpace.ScopeIndent
-    auto-fix: true
-    thresholds: { num-issues: 999 }
+    npm-test:
+      thresholds: {num-issues: 0}
 
-  pmd:
-    thresholds: { num-issues: 999 }
+    phpcs:
+      options:
+        --exclude:
+        - PEAR.Functions.FunctionCallSignature
+        - PEAR.Functions.FunctionDeclaration
+        - PEAR.WhiteSpace.ScopeIndent
+      auto-fix: true
+      thresholds: {num-issues: 13}
 
-  prettier:
-    auto-fix: true
-    thresholds: { num-issues: 999 }
+    pmd:
+      thresholds: {num-issues: 12}
 
-  #understand:
-  #  thresholds: { num-issues: 999 }
+    prettier:
+      auto-fix: true
+      thresholds: {num-issues: 24}
 
-  unused:
-    options: [ --single-occurrence, --all-likelihoods ]
-    thresholds: { num-issues: 999 }
+    # understand:
+    #   thresholds: {num-issues: 999}
+
+    unused:
+      options: [--single-occurrence]
+      thresholds: {num-issues: 1}
